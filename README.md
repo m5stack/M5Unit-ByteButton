@@ -10,6 +10,9 @@
 
 - [U192 Document & Datasheet](https://docs.m5stack.com/zh_CN/unit/unit-bytebutton)
 
+## Internal Firmware
+
+- [M5Unit ByteButton Internal Firmware](https://github.com/m5stack/M5Unit-ByteButton-Internal-FW)
 ## License
 
 - [MIT](https://github.com/m5stack/M5Unit-ByteButton/blob/main/LICENSE)
