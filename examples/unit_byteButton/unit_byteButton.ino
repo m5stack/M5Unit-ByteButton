@@ -64,7 +64,7 @@ void setup()
     delay(1000);
     Serial.printf("new I2C Address: %02x\n", device.getI2CAddress());
     delay(2000);
-    device.setI2CAddress(switchId);
+    device.setI2CAddress(buttonId);
     delay(1000);
 
     device.setLEDShowMode(BYTE_LED_MODE_DEFAULT);
