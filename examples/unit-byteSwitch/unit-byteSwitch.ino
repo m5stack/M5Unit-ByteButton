@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  *
  *
- * @Hardwares: Basic v2.7+ Unit ByteButton
+ * @Hardwares: Basic v2.7+ Unit ByteSwitch
  * @Dependent Library:
  * M5GFX@^0.2.3: https://github.com/m5stack/M5GFX
  * M5Unified@^0.2.2: https://github.com/m5stack/M5Unified
@@ -15,7 +15,7 @@
 #include <M5Unified.h>
 
 UnitByte device;
-uint8_t buttonId        = 0x47;
+uint8_t switchId        = 0x46;
 const uint32_t colors[] = {
     0xFF0000, 0x0000FF, 0xFFFF00, 0xFF00FF, 0x00FFFF, 0xFFFFFF, 0xFFA500, 0x808080, 0x00FF00,
 };
@@ -23,7 +23,7 @@ void setup()
 {
     M5.begin();
     Serial.begin(115200);
-    device.begin(&Wire1, buttonId, 32, 33, 400000);
+    device.begin(&Wire1, switchId, 22, 21, 400000);
     Serial.printf("getLEDMode :%d\n", device.getLEDShowMode());
     delay(1000);
     Serial.printf("Switch Status:%d\n", device.getSwitchStatus());
