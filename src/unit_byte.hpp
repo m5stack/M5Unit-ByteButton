@@ -13,10 +13,10 @@
 // #define UNIT_BYTE_DEBUG Serial  // This macro definition can be annotated without sending and receiving data prints
 //         Define the serial port you want to use, e.g., Serial1 or Serial2
 #if defined UNIT_BYTE_DEBUG
-#define serialPrint(...)   UNIT_ROLLER_DEBUG.print(__VA_ARGS__)
-#define serialPrintln(...) UNIT_ROLLER_DEBUG.println(__VA_ARGS__)
-#define serialPrintf(...)  UNIT_ROLLER_DEBUG.printf(__VA_ARGS__)
-#define serialFlush()      UNIT_ROLLER_DEBUG.flush()
+#define serialPrint(...)   UNIT_BYTEBUTTON_DEBUG.print(__VA_ARGS__)
+#define serialPrintln(...) UNIT_BYTEBUTTON_DEBUG.println(__VA_ARGS__)
+#define serialPrintf(...)  UNIT_BYTEBUTTON_DEBUG.printf(__VA_ARGS__)
+#define serialFlush()      UNIT_BYTEBUTTON_DEBUG.flush()
 #else
 #endif
 
